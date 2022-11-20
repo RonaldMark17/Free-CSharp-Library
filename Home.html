@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/39ac9c7ed0.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="icon copy.png">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="navigation">
+        <div class="side-nav">
+            <a href="index.html" class="logo">
+                <img src="./resources pics/icon copy.png" class="img-logo">
+                <p>FREE C# LIBRARY</p>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span>HOME</span></a></li>
+                <li><a href="gallery.html"><i class="fa-sharp fa-solid fa-pencil"></i><span>TUTORIALS</span></a></li>
+                <li><a href="#"><i class='bx bx-paperclip'></i><span>QUIZZES</span></a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-question"></i><span>ABOUT</span></a></li>
+                <li><a href="#feedback"><i class="fa-solid fa-comment"></i><span>FEEDBACK</span></a></li>
+                <div class="active"></div>
+            </ul>
+        </div>
+        <section class="tutorial" id="tutorial">
+            <div class="vid">
+                <video width="900" height="700" controls>
+                    <source src="./resources pics/mov_bbb.mp4" type="video/mp4">
+                </video>
+                <div class="example">
+                    <h4>C# Example:</h4>
+                    <div class="border-green">
+                        <span>using System;</span><br><br>
+                        <span>namespace HelloWorld</span><br>
+                        <span>{<span></span></span><br>
+                        <span> &emsp; class Program</span><br>
+                        <span>&emsp;{ </span><br>
+                        <span>&emsp; &emsp; static void Main(string[] args)</span><br>
+                        <span><span>&emsp;</span>&emsp;<span>{</span></span><br />
+                        <span>&emsp; &emsp; &emsp; Console.WriteLine("Hello
+                            World!");</span><br>
+                        <span>&emsp; &emsp;}</span><br>
+                        <span>&emsp; }</span><br>
+                        <span>}</span>
+                    </div>
+                    <button>Try it by Yourself</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Question</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer</label>
+                </li>
+
+            </ul>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

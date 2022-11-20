@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+    padding: 10px;
+}
+.form{
+    width: 500px;
+    padding: 6px;
+    background-color: black;
+}
+input,textarea{
+    width: 100%;
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    margin: 6px 0px;
+}
+#subject::selection{
+    user-select: none;
+}
+#btn{
+    width: 150px;
+    padding: 6px;
+    cursor: pointer;
+    background-color: green;
+
+}
